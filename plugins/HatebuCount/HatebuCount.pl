@@ -6,15 +6,15 @@ use constant NAME => ( split /::/, __PACKAGE__ )[-1];
 use constant FREQ => 60 * 60 * 24;
 
 my $plugin = __PACKAGE__->new({
-    name           => NAME,
-    id             => lc NAME,
-    key            => lc NAME,
-    l10n_class     => NAME . '::L10N',
-    version        => '0.01',
-    author_name    => 'masiuchi',
-    author_link    => 'https://github.com/masiuchi',
-    plugin_link    => 'https://github.com/masiuchi/mt-plugin-hatebu-count',
-    description    => '<__trans phrase="This plugin gets and shows the Hatebu Count of entries and pages.">',
+    name        => NAME,
+    id          => lc NAME,
+    key         => lc NAME,
+    l10n_class  => NAME . '::L10N',
+    version     => '0.02',
+    author_name => 'masiuchi',
+    author_link => 'https://github.com/masiuchi',
+    plugin_link => 'https://github.com/masiuchi/mt-plugin-hatebu-count',
+    description => '<__trans phrase="This plugin gets and shows the Hatebu Count of entries and pages.">',
 });
 MT->add_plugin( $plugin );
 
